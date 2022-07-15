@@ -545,4 +545,8 @@
 	
 	<!-- Whether device supports in-display fingerprint -->
     <bool name="config_supportsUdfps">false</bool>
+
+    <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
+
 </resources>
