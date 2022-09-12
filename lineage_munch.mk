@@ -25,7 +25,4 @@ PRODUCT_MODEL := POCO F4
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-   PRIVATE_BUILD_DESC="missi_phoneext4_global-user 13 TKQ1.220807.001 V14.0.1.0.TLMMIXM release-keys"
-
 BUILD_FINGERPRINT := Redmi/munch/munch:13/RKQ1.211001.001/V14.0.1.0.TLMMIXM:user/release-keys
