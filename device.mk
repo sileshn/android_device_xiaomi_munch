@@ -27,6 +27,10 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
+# GrapheneOS Camera
+PRODUCT_PACKAGES += \
+    Camera
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
