@@ -12,8 +12,6 @@ vendor/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
 
 # ADSP-Modules
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
 vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so
 vendor/lib/rfsa/adsp/hrtf5c.bin
 vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
