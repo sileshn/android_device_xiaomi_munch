@@ -14,6 +14,7 @@ BUILD_BROKEN_DUP_RULES := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
+BOARD_USES_ADRENO := true
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/munch.config
