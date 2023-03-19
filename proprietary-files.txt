@@ -1,7 +1,6 @@
 # Device proprietary files - from munch MIUI V14.0.1.0.TLMMIXM package, unless pinned
 
 # ACDB
-vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_General_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_Global_cal.acdb
@@ -10,6 +9,7 @@ vendor/etc/acdbdata/Tutu/Tutu_Hdmi_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_Headset_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP-Modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
@@ -20,9 +20,9 @@ vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
 vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
 vendor/lib/rfsa/adsp/libSuperSensor_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libarc_hta_driver_skel.so
 vendor/lib/rfsa/adsp/libarcsoft_beauty_hvx_skel.so
 vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
-vendor/lib/rfsa/adsp/libarc_hta_driver_skel.so
 vendor/lib/rfsa/adsp/libbitml_nsp_skel.so
 vendor/lib/rfsa/adsp/libcalculator_domains_skel.so
 vendor/lib/rfsa/adsp/libcalculator_skel.so
@@ -48,8 +48,8 @@ vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin
+vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
@@ -58,12 +58,12 @@ vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # Audio-Hardware
 vendor/lib/hw/audio.primary.kona.so
-vendor/lib/vndk/libxlog.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libresampler.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib/vndk/libxlog.so
 
 # Audio firmware
 vendor/firmware/mono.cnt
@@ -208,8 +208,8 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera-arcsoft
 vendor/lib64/libarcsoft_beautyshot.so
-vendor/lib64/libarcsoft_hdrplus_hvx_stub.so
 vendor/lib64/libarcsoft_hdr_detection.so
+vendor/lib64/libarcsoft_hdrplus_hvx_stub.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_hta.so
 vendor/lib64/libarcsoft_mf_superresolution.so
@@ -220,8 +220,8 @@ vendor/lib64/libarcsoft_super_night_raw.so
 # Camera components
 vendor/lib64/camera/components/com.arcsoft.node.smoothtransition.so
 vendor/lib64/camera/components/com.facepp.node.siq.so
-vendor/lib64/camera/components/com.mi.node.aiasd.so
 vendor/lib64/camera/components/com.mi.node.AIIE.so
+vendor/lib64/camera/components/com.mi.node.aiasd.so
 vendor/lib64/camera/components/com.mi.node.hdr.so
 vendor/lib64/camera/components/com.mi.node.mimovie.so
 vendor/lib64/camera/components/com.mi.node.realtimebokeh.so
@@ -277,12 +277,13 @@ vendor/lib64/camera/components/libdepthmapwrapper.so
 vendor/lib64/camera/components/libubifocus.so
 
 # Camera-configs
-vendor/etc/camera/mibokeh_855_opencl.bin
-vendor/etc/camera/mibokeh_855_parameter.bin
-vendor/etc/camera/model_front_mibokeh_video.dlc
+vendor/etc/camera/CFR_para_T_2x_V03.bin
+vendor/etc/camera/CFR_para_UW_V03.bin
+vendor/etc/camera/CFR_para_W_V03.bin
+vendor/etc/camera/GpuKernelRepo.pb
+vendor/etc/camera/ai_enhance.dlc
 vendor/etc/camera/aivsModels1
 vendor/etc/camera/aivsParams
-vendor/etc/camera/ai_enhance.dlc
 vendor/etc/camera/almalence_sr_params_tele.config
 vendor/etc/camera/almalence_sr_params_tele4x.config
 vendor/etc/camera/almalence_sr_params_tele4x_iso100.config
@@ -304,9 +305,6 @@ vendor/etc/camera/beauty_style_pink.cng
 vendor/etc/camera/beauty_style_skin_gloss.cng
 vendor/etc/camera/bokehParams.json
 vendor/etc/camera/camxoverridesettings.txt
-vendor/etc/camera/CFR_para_T_2x_V03.bin
-vendor/etc/camera/CFR_para_UW_V03.bin
-vendor/etc/camera/CFR_para_W_V03.bin
 vendor/etc/camera/com.xiaomi.dcal.wu.fake
 vendor/etc/camera/com.xiaomi.dcal.wu.golden
 vendor/etc/camera/com.xiaomi.dcal.wu.golden2
@@ -314,12 +312,13 @@ vendor/etc/camera/det_quantize.dlc
 vendor/etc/camera/eisoverridesettings.txt
 vendor/etc/camera/goturn_search_dsp.dlc
 vendor/etc/camera/goturn_target_dsp.dlc
-vendor/etc/camera/GpuKernelRepo.pb
 vendor/etc/camera/hdrcheckerparamsettings.yml
 vendor/etc/camera/hdrd_ui9_params.config
 vendor/etc/camera/intsense_config_undistort.bin
 vendor/etc/camera/miai_hdr_config.yaml
 vendor/etc/camera/miai_psn_config.yaml
+vendor/etc/camera/mibokeh_855_opencl.bin
+vendor/etc/camera/mibokeh_855_parameter.bin
 vendor/etc/camera/model/cap_model/capture_cache
 vendor/etc/camera/model/cap_model/capture_model
 vendor/etc/camera/model/cap_model/capture_policy
@@ -332,6 +331,7 @@ vendor/etc/camera/model/rt_model/preview_model
 vendor/etc/camera/model/rt_model/preview_policy
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
+vendor/etc/camera/model_front_mibokeh_video.dlc
 vendor/etc/camera/reid_float.dlc
 vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/seg_quantized.dlc
@@ -408,8 +408,8 @@ vendor/lib64/camera/com.qti.sensormodule.munch_ofilm_imx582_wide.bin|2e2c737b926
 # Charger (HVDCP)
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # Charger (Mi Turbo Charge)
 vendor/bin/batterysecret
@@ -514,12 +514,12 @@ vendor/etc/sensors/sns_reg_config
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
+vendor/etc/elliptic_sensor.xml
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/etc/elliptic_sensor.xml
-vendor/lib/libsensorcal.so
 vendor/lib/libsensor_cal_v2.so
+vendor/lib/libsensorcal.so
 vendor/lib/libsensorslog.so
 vendor/lib/libsns_device_mode_stub.so
 vendor/lib/libsns_fastRPC_util.so
@@ -535,8 +535,8 @@ vendor/lib/sensors.mius.proximity.so
 vendor/lib/sensors.ssc.so
 vendor/lib/sensors.touch.so
 vendor/lib64/libnotifyaudiohal.so
-vendor/lib64/libsensorcal.so
 vendor/lib64/libsensor_cal_v2.so
+vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
